@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>This is the fanompo MAIN page</h1>
+<br>
+<h4>Some Pixar Movies:</h4>
+<ul>
+{% for film in films_list %}  
+  <li>{{film.title}} ({{film.year}}, genre: "{{film.genre}}")</li>
+{% endfor %}
+</ul>
+
+{% endblock  %}
